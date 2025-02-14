@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
+
+		var applicationContext = SpringApplication.run(SpringbootApplication.class, args);
+
+		TestService testService = applicationContext.getBean(TestService.class);
+		System.out.println(testService.tellAStory());
 	}
 
 }
