@@ -12,7 +12,7 @@ public class SpringbootApplication {
 
 		var application = new SpringApplication(SpringbootApplication.class);
 
-		application.setDefaultProperties(Collections.singletonMap("spring.profiles.active", "prod"));
+//		application.setDefaultProperties(Collections.singletonMap("spring.profiles.active", "prod"));
 
 		var applicationContext = application.run(args);
 

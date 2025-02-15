@@ -11,13 +11,11 @@ import org.springframework.context.annotation.Profile;
 public class ApplicationConfig {
 
     @Bean()
-    @Profile("dev")
     public Test test1() {
         return new Test("The First Bean");
     }
 
     @Bean()
-    @Profile("prod")
     public Test test2() {
         return new Test("The Second Bean");
     }
