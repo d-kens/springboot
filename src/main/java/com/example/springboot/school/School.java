@@ -1,5 +1,6 @@
-package com.example.springboot;
+package com.example.springboot.school;
 
+import com.example.springboot.student.Student;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 

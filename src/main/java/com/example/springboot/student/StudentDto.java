@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.example.springboot.student;
 
 public record StudentDto(
         String firstname,

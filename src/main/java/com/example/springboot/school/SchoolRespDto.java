@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.example.springboot.school;
 
 public record SchoolRespDto(
         Integer id,

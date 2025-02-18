@@ -1,5 +1,6 @@
-package com.example.springboot;
+package com.example.springboot.studentprofile;
 
+import com.example.springboot.student.Student;
 import jakarta.persistence.*;
 
 @Entity
