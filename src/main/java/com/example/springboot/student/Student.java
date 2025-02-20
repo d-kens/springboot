@@ -31,7 +31,7 @@ public class Student {
     )
     private String email;
 
-    private Short age;
+    private Integer age;
 
 
     @OneToOne(
@@ -51,7 +51,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(String firstName, String lastName, Short age) {
+    public Student(String firstName, String lastName, Integer age) {
         this.firstname = firstName;
         this.lastname = lastName;
         this.age = age;
@@ -89,11 +89,11 @@ public class Student {
         this.lastname = lastname;
     }
 
-    public Short getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(Short age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
