@@ -51,9 +51,10 @@ public class Student {
     public Student() {
     }
 
-    public Student(String firstName, String lastName, Integer age) {
+    public Student(String firstName, String lastName, String email, Integer age) {
         this.firstname = firstName;
         this.lastname = lastName;
+        this.email = email;
         this.age = age;
     }
 

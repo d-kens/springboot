@@ -16,6 +16,13 @@ public class StudentService {
         this.studentMapper = studentMapper;
     }
 
+    public StudentRespDto create(StudentDto studentDto) {
+        var student = studentMapper.toStudent(studentDto);
+        var savedStudent =  repository.save(student);
+        return studentMapper.toStudentRespDto(savedStudent);
+    }
+
+
     public List<StudentRespDto> findAll() {
         return repository.findAll()
                 .stream()
@@ -34,12 +41,6 @@ public class StudentService {
                 .stream()
                 .map(studentMapper::toStudentRespDto)
                 .collect(Collectors.toList());
-    }
-
-    public StudentRespDto create(StudentDto studentDto) {
-        var student = studentMapper.toStudent(studentDto);
-        var savedStudent =  repository.save(student);
-        return studentMapper.toStudentRespDto(savedStudent);
     }
 
     public void delete(Integer id) {

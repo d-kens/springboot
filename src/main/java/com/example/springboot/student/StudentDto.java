@@ -6,11 +6,10 @@ public record StudentDto(
         @NotEmpty(message = "firstname should not be empty")
         String firstname,
 
-        @NotEmpty(message = "lastname shoulkd not be empty")
+        @NotEmpty(message = "lastname should not be empty")
         String lastname,
 
         String email,
         Integer age,
         Integer schoolId
-) {
-}
+) {}
