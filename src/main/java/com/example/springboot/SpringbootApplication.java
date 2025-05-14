@@ -8,9 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootApplication {
 
 	public static void main(String[] args) {
-		var applicationContext = SpringApplication.run(SpringbootApplication.class, args);
-
-		MyFirstService myFirstService = applicationContext.getBean(MyFirstService.class);
-		System.out.println(myFirstService.tellStory());
+		SpringApplication.run(SpringbootApplication.class, args);
 	}
 }
